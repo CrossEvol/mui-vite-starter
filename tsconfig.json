@@ -11,6 +11,9 @@
     "skipLibCheck": true,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
+    "types": [
+      "@testing-library/jest-dom"
+    ],
     "strict": true,
     "forceConsistentCasingInFileNames": false,
     "module": "ESNext",
@@ -21,7 +24,10 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "**/*.ts",
+    "**/*.tsx",
+    "./vitest.setup.ts"
   ],
   "references": [
     {
