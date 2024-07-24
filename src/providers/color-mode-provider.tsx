@@ -16,7 +16,7 @@ export default function ColorModeProvider({
                 setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'))
             },
         }),
-        []
+        [],
     )
 
     const theme = React.useMemo(
@@ -35,7 +35,7 @@ export default function ColorModeProvider({
                     },
                 },
             }),
-        [mode]
+        [mode],
     )
 
     return (

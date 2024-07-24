@@ -14,19 +14,18 @@ const TodoList: React.FC = () => {
     }
 
     return (
-        <div className='max-w-md mx-auto mt-10 p-4 bg-white shadow-lg rounded-lg'>
-            <h1 className='text-xl font-bold mb-4'>Todo List</h1>
-            <div className='flex mb-4'>
+        <div className='mx-auto mt-10 max-w-md rounded-lg bg-white p-4 shadow-lg'>
+            <h1 className='mb-4 text-xl font-bold'>Todo List</h1>
+            <div className='mb-4 flex'>
                 <input
                     type='text'
-                    className='flex-grow p-2 border border-gray-300 rounded-md'
+                    className='flex-grow rounded-md border border-gray-300 p-2'
                     value={newTodo}
                     onChange={(e) => setNewTodo(e.target.value)}
                 />
                 <button
-                    className='ml-2 p-2 bg-blue-500 text-white rounded-md'
-                    onClick={handleAddTodo}
-                >
+                    className='ml-2 rounded-md bg-blue-500 p-2 text-white'
+                    onClick={handleAddTodo}>
                     Add
                 </button>
             </div>
@@ -34,8 +33,7 @@ const TodoList: React.FC = () => {
                 {todos.map((todo) => (
                     <li
                         key={todo.id}
-                        className='flex items-center justify-between mb-2'
-                    >
+                        className='mb-2 flex items-center justify-between'>
                         <input
                             type='checkbox'
                             checked={todo.completed}
@@ -43,10 +41,7 @@ const TodoList: React.FC = () => {
                             className='mr-2'
                         />
                         <span
-                            className={`flex-grow ${
-                                todo.completed ? 'line-through' : ''
-                            }`}
-                        >
+                            className={`flex-grow ${todo.completed ? 'line-through' : ''}`}>
                             {todo.text}
                         </span>
                         {/* <span
@@ -58,9 +53,8 @@ const TodoList: React.FC = () => {
                             {todo.text}
                         </span> */}
                         <button
-                            className='ml-2 p-2 bg-red-500 text-white rounded-md'
-                            onClick={() => deleteTodo(todo.id)}
-                        >
+                            className='ml-2 rounded-md bg-red-500 p-2 text-white'
+                            onClick={() => deleteTodo(todo.id)}>
                             Delete
                         </button>
                     </li>

@@ -24,7 +24,7 @@ export default function Home() {
                 <Typography variant='h4' component='h1' sx={{ mb: 2 }}>
                     Material UI Vite.js example in TypeScript
                 </Typography>
-                <Button variant="contained">Contained</Button>
+                <Button variant='contained'>Contained</Button>
                 <h1 className='text-3xl font-bold underline'>Hello world!</h1>
                 <ProTip />
                 <Copyright />

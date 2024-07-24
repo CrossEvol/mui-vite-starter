@@ -12,5 +12,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
                 <App />
             </JotaiProvider>
         </ColorModeProvider>
-    </React.StrictMode>
+    </React.StrictMode>,
 )

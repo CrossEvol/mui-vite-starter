@@ -20,7 +20,7 @@ const Uppercase = () => {
 }
 
 const Len = () => (
-    <div className='h-96 mt-40 ml-40'>
+    <div className='ml-40 mt-40 h-96'>
         <div>
             <Input />
             <CharCount />

@@ -4,7 +4,8 @@ const config = {
   semi: false,
   singleQuote: true,
   jsxSingleQuote: true,
-  bracketSameLine:true,
+  bracketSameLine: true,
+  tabWidth: 4,
 };
 
 export default config;

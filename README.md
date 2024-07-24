@@ -6,4 +6,4 @@
 - dark mode
 - sign-in && sign-up
 - simple TodoList page
-- 
+- eslint && prettier
